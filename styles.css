@@ -1,0 +1,241 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #1a1a1a;
+  }
+  
+  .navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 1rem;
+  }
+  
+  .nav-links a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ffffff;
+  }
+  
+  .burger-menu {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Sections */
+  section {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .home-section {
+    text-align: center;
+  }
+  
+  .glowing-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    /* text-shadow: 0 0 10px #ffffff, 0 0 20px #cccccc;
+    animation: glow 2s infinite alternate; */
+  }
+   
+  .robot-image img {
+    margin-top: 2rem;
+    width: 250px;
+    height: 250px;
+    /* border-radius: 50%; */
+    border: 5px solid #cccccc;
+    /* box-shadow: 0 0 20px #888888; */
+  }
+  
+  .about-section {
+    background-color: #1a1a1a;
+    color: #cccccc;
+  }
+  
+  .friends-section {
+    background-color: #1a1a1a;
+  }
+  
+  .friends-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  
+  .friend img {
+    width: 150px;
+    height: 150px;
+    border-radius:100%;
+    border: 3px solid #888888;
+  }
+  
+  .friend p {
+    margin-top: 0.5rem;
+    color: #cccccc;
+  }
+  
+  .contact-section {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: #888888;
+    color: #121212;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background: #ffffff;
+    color: #121212;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #1a1a1a;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .burger-menu {
+      display: block;
+    }
+  }
+  /* Contact Page Styling */
+.contact-page {
+    padding: 3rem 1rem;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .contact-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  
+  .contact-page p {
+    color: #cccccc;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  
+  .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #888888;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #cccccc;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #888888;
+    border-radius: 5px;
+    background: #121212;
+    color: #ffffff;
+  }
+  
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: #666666;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #cccccc;
+    outline: none;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: #888888;
+    color: #121212;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background: #ffffff;
+    color: #121212;
+  }
+  
+  /* Footer Styling */
+  .footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #000000;
+    color: #cccccc;
+    font-size: 0.9rem;
+  }
+  
+  
